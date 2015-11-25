@@ -1,0 +1,1 @@
+The rules engine in Sitecore was changed in Sitecore 7 and 8. Version 1.1.1 of this package has a newer version of the item package for use with these versions of Sitecore.
