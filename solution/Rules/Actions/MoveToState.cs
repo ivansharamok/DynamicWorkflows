@@ -12,7 +12,7 @@ namespace Sitecore.SharedSource.Workflows.Rules.Actions
     using Sitecore.Rules.Actions;
     using Sitecore.StringExtensions;
 
-   /// <summary>
+    /// <summary>
     /// Class represents a workflow action Move to State.
     /// </summary>
     /// <typeparam name="T">
@@ -41,7 +41,7 @@ namespace Sitecore.SharedSource.Workflows.Rules.Actions
                 ruleContext.Arguments.NextStateId = this.StateId;
                 if (Sitecore.Configuration.Settings.GetBoolSetting("DynamicWorkflow.LogStateSkipping", false))
                 {
-                   Log.Info("DynamicWorkflow::Item '{0}' was detoured from {1} workflow state to {2} one by the rule.".FormatWith(item.ID, originalTargetState, this.StateId), this);
+                    Log.Info("DynamicWorkflow::Item '{0}' was detoured from {1} workflow state to {2} one by the rule.".FormatWith(item.ID, originalTargetState, this.StateId), this);
                 }
             }
         }
